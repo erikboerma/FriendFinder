@@ -2,15 +2,15 @@ var friends = require("../data/friends");
 
 module.exports = function(app){
     app.get("/api/friends", function(req, res){
-        res.json(friendData)
+        res.json(friends)
     });
     app.post("/api/friends", function(req, res){
         var newFriendScoreArr = req.body.scores;
         var scoreArr = [];
         var newFriendScoreTotal = 0;
 
-        for (var i =0; i < friendData.length; i++){
-            currentFriend = friendData[i];
+        for (var i =0; i < friends.length; i++){
+            currentFriend = friends[i];
             
             var friendScore = 0;
             for (var j = 0; j < currentFriend.scores.length; j++){
@@ -24,9 +24,9 @@ module.exports = function(app){
             }
         }
 
-        var newBestie = friendData[newFriendScoreTotal];
+        var newBestie = friends[newFriendScoreTotal];
         res.json(newBestie);
-        friendData.push(req.body);
+        friends.push(req.body);
 
 
     })   
