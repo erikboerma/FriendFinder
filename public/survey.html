@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Friend Finder</title>
+    <!-- external links (bootstrap and jQuery) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Survey Questions</h2>
+        <hr>
+        <br>
+
+        <h2>About You</h2>
+        <h3>Name</h3>
+        <input type="text" id="name" class="keyInfo" required>
+
+        <h3>Photo (Please submit a link)</h3>
+        <input type="text" id="photo" class="keyInfo" required>
+        <hr>
+        <br>
+        <h3><strong>Question 1</strong></h3>
+        <h4>You prefer an apple over a tastycake</h4>
+        <select class="surveyAnswer" id="q1">
+            <option value=""></option>
+            <option value="1">1 (mmm, fruit)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Processed carbs, yes please)</option>
+        </select>
+
+        <h3><strong>Question 2</strong></h3>
+        <h4>If a friend wants to go to a Picnic, you suggest going to a bar with an all you can eat hotdog special</h4>
+        <select class="surveyAnswer" id="q2">
+            <option value=""></option>
+            <option value="1">1 (Grab the basket)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Crack a beer and pop some tums)</option>
+        </select>
+
+
+        <h3><strong>Question 3</strong></h3>
+        <h4>Someone offers you a spritzer, you take it or pull out a beer from the 6 pack you always carry around</h4>
+        <select class="surveyAnswer" id="q3">
+            <option value=""></option>
+            <option value="1">1 (Spritzer)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Beer)</option>
+        </select>
+
+
+        <h3><strong>Question 4</strong></h3>
+        <h4>It's Sunday and your football team is on a bye week, you:</h4>
+        <select class="surveyAnswer" id="q4">
+            <option value=""></option>
+            <option value="1">1 (Watch some golf, aka nap)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Scout the competition)</option>
+        </select>
+
+
+        <h3><strong>Question 5</strong></h3>
+        <h4>Half way through the season, its clear you might not make the playoffs.. Your thoughts are:</h4>
+        <select class="surveyAnswer" id="q5">
+            <option value=""></option>
+            <option value="1">1 (Come on guys, keep trying)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (There is always next year)</option>
+        </select>
+
+
+        <h3><strong>Question 6</strong></h3>
+        <h4>Someone invites you to hang out but doesn't suggest a plan, you:</h4>
+        <select class="surveyAnswer" id="q6">
+            <option value=""></option>
+            <option value="1">1 (Wait to see what they propose)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Say yes and plan an all nighter)</option>
+        </select>
+
+
+        <h3><strong>Question 7</strong></h3>
+        <h4>Text message convo or pick up the phone</h4>
+        <select class="surveyAnswer" id="q7">
+            <option value=""></option>
+            <option value="1">1 (Type till my thumbs fall off)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Lets talk, I miss you)</option>
+        </select>
+
+        <h3><strong>Question 8</strong></h3>
+        <h4>Stop signs, you:</h4>
+        <select class="surveyAnswer" id="q8">
+            <option value=""></option>
+            <option value="1">1 (Always come to a complete stop)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (They're more just a suggestion)</option>
+        </select>
+
+        <h3><strong>Question 9</strong></h3>
+        <h4>Social media:</h4>
+        <select class="surveyAnswer" id="q9">
+            <option value=""></option>
+            <option value="1">1 (Can't get enough)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (The cause of so many of life's problems)</option>
+        </select>
+
+        <h3><strong>Question 10</strong></h3>
+        <h4>I believe I'm: </h4>
+        <select class="surveyAnswer" id="q10">
+            <option value=""></option>
+            <option value="1">1 (Very reserved)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Outgoing)</option>
+        </select>
+        <hr>
+        <br>
+        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle"
+                aria-hidden="true"></i>
+            Submit</button>
+
+
+        <br>
+        <footer class="footer">
+            <a href="/api/friends.js" class="card-link">Friend List API</a>
+            <a href="https://github.com/erikboerma/FriendFinder" class="card-link">GitHub link</a>
+        </footer>
+    </div>
+    <!-- model -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Your best friend!</h4>
+                </div>
+                <div class="modal-body">
+                    <h5 id="friendName"></h5>
+                    <img id="friendPic" src="" alt="They didn't put a photo">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script type="text/javascript">
+
+            $("#submit").on("click", function (event) {
+                event.preventDefault();
+
+                function validateForm() {
+                    var isValid = true;
+                    $(".keyInfo").each(function () {
+                        if ($(this).val() === "") {
+                            isValid = false;
+                        }
+                    });
+                    $(".surveyAnswer").each(function () {
+                        if ($(this).val() === "") {
+                            isValid = false;
+                        }
+                    });
+                    return isValid;
+                }
+                if (validateForm()) {
+                    var newFriend = {
+                        name: $("#name").val(),
+                        photo: $("#photo").val(),
+                        scores: [
+                        $("#q1").val(),
+                        $("#q2").val(),
+                        $("#q3").val(),
+                        $("#q4").val(),
+                        $("#q5").val(),
+                        $("#q6").val(),
+                        $("#q7").val(),
+                        $("#q8").val(),
+                        $("#q9").val(),
+                        $("#q10").val()
+                    ]
+                    };
+
+                $.post("/api/friends", newFriend, function(data){
+                    $("#friendName").text(data.name);
+                    $("#friendPic").attr("src", data.photo);
+
+                    $("results-modal").modal("toggle");
+
+                })
+                } else {
+                    alert("You missed something, please make sure everything is completed!")
+                }
+
+            });
+            
+    
+
+
+    </script>
+</body>
+
+</html>
